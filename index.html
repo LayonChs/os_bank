@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+<head>
+  <meta charset="utf-8">
+  <title>Bank</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h2 id="titulo">Bem-Vindo(a)</h2>
+  <!-------------------------------------------------------------->
+  <div id="areaRegistro">
+    <h3>Vamos fazer o seu cadastro</h3>
+    Nome: <input type="text" id="nomeCad" placeholder="Nome Completo"><br>
+    CPF: <input type="text" id="cpfCad" placeholder="CPF"><br>
+    Senha: <input type="password" id="senhaCad" placeholder="Senha"><br>
+    <button id="btnCadastrar">Cadastrar</button>
+    <button id="irParaLogin">Login</button>
+    <div id="respRegistro"></div>
+  </div>
+  <!-------------------------------------------------------------->
+  <div id="areaLogin">
+    <h3>Vamos conectar</h3>
+    Nome: <input type="text" id="nomeLogin" placeholder="Nome Completo"><br>
+    Senha: <input type="password" id="senhaLogin" placeholder="Senha"><br>
+    <button id="btnLogin">Entrar</button>
+    <button id="irParaCadastro">Cadastrar</button>
+    <div id="respLogin"></div>
+  </div>
+  <!-------------------------------------------------------------->
+  <div id="app">
+    <div id="exibInfos">
+      <div id="exibNome"></div>
+      <div id="exibSaldo"></div>
+    </div>
+    -----------------------------------------------------------------------------<br>
+    <div id="telaPrincipal">
+      <button id="irParaDeposito">Depositar</button><br>
+      <button id="irParaTransferir">Transferir</button><br>
+      <button id="irParaExtrato">Extrato</button><br>
+      <button id="irParaExcluirConta">Excluir conta</button><br>
+      <button id="sair">Sair</button>
+    </div>
+    <!-------------------------------------------------------------->
+    <div id="areaDeposito">
+      <h3>Deposito</h3>
+      Valor: <input type="number" id="valorDeposito"><br>
+      <button id="btnConfDeposito">Confirmar</button>
+      <button id="btnVoltar_1">Voltar</button>
+      <div id="respDeposito"></div>
+    </div>
+    <!-------------------------------------------------------------->
+    <div id="areaTransferencia">
+      <h3>Transferencia</h3>
+      
+      <div id="trasnfParte_1">
+        CPF do Favorecido: <input type="text" id="favorecido"><br>
+        <button id="btnContinuar">Continuar</button>
+       <button id="btnVoltar_2">Voltar</button>
+      </div>
+      
+      <div id="infoFav"></div>
+      
+      <div id="trasnfParte_2">
+        Valor: <input type="number" id="valorTransferencia"><br>
+      <button id="confTransferencia">Confirmar</button>
+      <button id="btnVoltar_3">Voltar</button>
+      </div>
+      
+      <div id="respTransferencia"></div>
+    </div>
+    <!-------------------------------------------------------------->
+    <div id="areaEXcluir">
+      <h3>Excluir conta</h3>
+      Confirmar exclusão <button id="confExclusao">Excluir</button>
+      <button id="btnVoltar_5">Voltar</button>
+      <div id="respExclusao"></div>
+    </div>
+    <!-------------------------------------------------------------->
+    <div id="areaExtrato">
+      <h3>Extrato</h3>
+      <p id="msgInicial">Sem registro de movimentaçoes</p>
+      <div id="movimentacao"></div>
+      <button id="btnVoltar_4">Voltar</button>
+    </div>
+    <!-------------------------------------------------------------->
+  </div>
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
